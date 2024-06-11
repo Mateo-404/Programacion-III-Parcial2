@@ -70,7 +70,7 @@ namespace PracticaForm
             }
             else
             {
-                Funciones.mAdvertencia(this , "Ingrese un CUIT válido");
+                MessageBox.Show("Ingrese un Cuit Valido");
             }
 
 
@@ -94,7 +94,12 @@ namespace PracticaForm
             lbPais.Text = "";
         }
 
-        private void mtbCUIT_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void chkCplus_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkc_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -47,8 +47,9 @@ namespace PracticaForm
 
         public void Guardar()
         {
-            //guardar en archivo 
             /*
+            //guardar en archivo 
+
             try
             {
 

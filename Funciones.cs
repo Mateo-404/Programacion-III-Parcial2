@@ -58,8 +58,6 @@ namespace PracticaForm
             }
         }
 
-
-        // <-- Mensajes -->
         public static void mError(Form actual, string mensaje)
         {
             MessageBox.Show(actual, mensaje, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);

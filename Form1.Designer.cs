@@ -87,7 +87,6 @@
             mtbCUIT.Name = "mtbCUIT";
             mtbCUIT.Size = new Size(177, 25);
             mtbCUIT.TabIndex = 6;
-            mtbCUIT.MaskInputRejected += mtbCUIT_MaskInputRejected;
             // 
             // nupEdad
             // 
@@ -177,7 +176,7 @@
             // rbMasculino
             // 
             rbMasculino.AutoSize = true;
-            rbMasculino.Location = new Point(19, 64);
+            rbMasculino.Location = new Point(19, 39);
             rbMasculino.Name = "rbMasculino";
             rbMasculino.Size = new Size(89, 23);
             rbMasculino.TabIndex = 8;
@@ -216,6 +215,7 @@
             chkCplus.TabIndex = 12;
             chkCplus.Text = "C++";
             chkCplus.UseVisualStyleBackColor = true;
+            chkCplus.CheckedChanged += chkCplus_CheckedChanged;
             // 
             // chkc
             // 
@@ -227,12 +227,13 @@
             chkc.TabIndex = 11;
             chkc.Text = "C#";
             chkc.UseVisualStyleBackColor = true;
+            chkc.CheckedChanged += chkc_CheckedChanged;
             // 
             // lbPais
             // 
             lbPais.FormattingEnabled = true;
             lbPais.ItemHeight = 17;
-            lbPais.Items.AddRange(new object[] { "Argentina", "Chile ", "Uruguay" });
+            lbPais.Items.AddRange(new object[] { "Argentina", "Brazil", "Chile ", "Peru" });
             lbPais.Location = new Point(114, 227);
             lbPais.Name = "lbPais";
             lbPais.Size = new Size(177, 89);
