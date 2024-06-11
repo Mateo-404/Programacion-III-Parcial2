@@ -9,7 +9,7 @@ namespace PracticaForm
         {
             InitializeComponent();
         }
-        
+
         private void btoIngresar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text.Trim();
@@ -43,9 +43,9 @@ namespace PracticaForm
 
                 Ingresante ing = new Ingresante(nombre, direccion, edad, cuit, genero, pais, curso);
 
-       
 
-          //      if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+
+                //      if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
                 if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
                 {
                     if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -70,7 +70,7 @@ namespace PracticaForm
             }
             else
             {
-                MessageBox.Show("Ingrese un Cuit Valido");
+                Funciones.mAdvertencia(this , "Ingrese un CUIT válido");
             }
 
 
@@ -92,6 +92,11 @@ namespace PracticaForm
             chkCplus.Checked = false;
             chkJavaScript.Checked = false;
             lbPais.Text = "";
+        }
+
+        private void mtbCUIT_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
