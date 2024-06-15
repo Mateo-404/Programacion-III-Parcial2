@@ -233,7 +233,7 @@
             // 
             lbPais.FormattingEnabled = true;
             lbPais.ItemHeight = 17;
-            lbPais.Items.AddRange(new object[] { "Argentina", "Brazil", "Chile ", "Peru" });
+            lbPais.Items.AddRange(new object[] { "Argentina", "Chile", "Uruguay " });
             lbPais.Location = new Point(114, 227);
             lbPais.Name = "lbPais";
             lbPais.Size = new Size(177, 89);

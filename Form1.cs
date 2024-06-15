@@ -8,6 +8,7 @@ namespace PracticaForm
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btoIngresar_Click(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace PracticaForm
 
                 string c1 = chkc.Checked ? chkc.Text.Trim() : "";
                 string c2 = chkCplus.Checked ? chkCplus.Text.Trim() : "";
-                string c3 = chkJavaScript.Checked ? chkCplus.Text.Trim() : "";
+                string c3 = chkJavaScript.Checked ? chkJavaScript.Text.Trim() : "";
 
                 string[] curso = new string[3];
                 if (c1 == "" && c2 == "" && c3 == "")
@@ -72,10 +73,6 @@ namespace PracticaForm
             {
                 MessageBox.Show("Ingrese un Cuit Valido");
             }
-
-
-
-
 
         }
 

@@ -1,34 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\",
+  "WorkspaceRootPath": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\grary\\documents\\github\\programacion-iii-utn\\parcial-2\\programacion-iii-parcial2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\grary\\documents\\github\\programacion-iii-utn\\parcial-2\\programacion-iii-parcial2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\grary\\documents\\github\\programacion-iii-utn\\parcial-2\\programacion-iii-parcial2\\ingresante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:ingresante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\grary\\documents\\github\\programacion-iii-utn\\parcial-2\\programacion-iii-parcial2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\diazs\\onedrive\\escritorio\\repo\\programacion-iii-parcial2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\diazs\\onedrive\\escritorio\\repo\\programacion-iii-parcial2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\diazs\\onedrive\\escritorio\\repo\\programacion-iii-parcial2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\diazs\\onedrive\\escritorio\\repo\\programacion-iii-parcial2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\grary\\documents\\github\\programacion-iii-utn\\parcial-2\\programacion-iii-parcial2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\diazs\\onedrive\\escritorio\\repo\\programacion-iii-parcial2\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|c:\\users\\diazs\\onedrive\\escritorio\\repo\\programacion-iii-parcial2\\ingresante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F881A35-82A6-4484-97C1-B2AFBBDB8D19}|PracticaForm.csproj|solutionrelative:ingresante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +42,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T18:26:25.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T05:44:57.068Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form1.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAlwBcAAAApAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T05:49:59.156Z",
               "EditorCaption": ""
@@ -56,72 +85,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\PracticaForm\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\PracticaForm\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T05:49:55.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Program.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T05:45:12.492Z"
+              "WhenOpened": "2024-06-11T05:45:12.492Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\PracticaForm\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\PracticaForm\\Form2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T05:44:57.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Ingresante.cs",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Ingresante.cs",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Ingresante.cs",
               "RelativeDocumentMoniker": "Ingresante.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Ingresante.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Ingresante.cs",
               "RelativeToolTip": "Ingresante.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwEQAAAAOAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T05:34:33.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form3.cs",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form3.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form3.cs",
               "RelativeToolTip": "Form3.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAEwDUAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T05:31:54.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Form3.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form3.cs",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\Form3.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form3.cs [Dise\u00F1o]",
               "RelativeToolTip": "Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T04:50:58.021Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T05:49:55.738Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
