@@ -46,12 +46,15 @@ namespace PracticaForm
 
 
 
-                //      if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+                //if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
                 if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
                 {
                     if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        //ing.Guardar();
+                        List<Ingresante> listaIngresantes = new List<Ingresante>();
+                        listaIngresantes.Add(ing);
+
+                        ing.Guardar(listaIngresantes, new List<string>(curso));
                         this.Vaciar();
                     }
                     else
