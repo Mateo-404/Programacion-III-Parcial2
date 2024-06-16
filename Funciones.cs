@@ -92,23 +92,26 @@ namespace PracticaForm
                 return null;
             }
         }
+        // XML
         public static bool serializarIngresanteXML(List<Ingresante> _listaAlumnos, string nombre_archivo){
             try
             {
-                StreamWriter _escritor = new StreamWriter(nombre_archivo +".xml");
-                XmlSerializer _serializador = new XmlSerializer(typeof(Ingresante));
-                //Función Arrow => (Función Lambda)
-                _listaAlumnos.ForEach(_ingresante => _serializador.Serialize(_escritor, _ingresante));
-                _escritor.Close();
-                _escritor.Dispose();
+                StreamWriter escritor = new StreamWriter(nombre_archivo + ".xml");
+            
+                XmlSerializer serializador = new XmlSerializer(typeof(List<Ingresante>));
+                serializador.Serialize(escritor, _listaAlumnos);
+            
                 return true;
             }
             catch (Exception e)
             {
+                Funciones.mError(Form3.ActiveForm, e.Message);
                 return false;
             }
         }
 
+
+        // JSON
         public static bool serializarIngresanteJSON(List<Ingresante> _listaAlumnos, string nombre_archivo){
            
             try
@@ -124,6 +127,7 @@ namespace PracticaForm
             }
             catch (Exception e)
             {
+                Funciones.mError(Form3.ActiveForm, e.Message);
                 return false;
             }
         }

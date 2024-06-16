@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaForm
 {
-    internal class Ingresante
+    public class Ingresante
     {
         string nombre;
         string direccion;

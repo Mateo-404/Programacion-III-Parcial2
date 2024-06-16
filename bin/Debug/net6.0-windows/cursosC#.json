@@ -1,0 +1,24 @@
+[
+  {
+    "Nombre": "Mateo Gariboglio",
+    "Direccion": "Clarke 1053",
+    "Edad": 20,
+    "Genero": "Argentina",
+    "Pais": "Masculino",
+    "Curso": [
+      "C#"
+    ],
+    "Cuit": "20460401454"
+  },
+  {
+    "Nombre": "Giorgio Uberti",
+    "Direccion": "Cronos 103",
+    "Edad": 20,
+    "Genero": "Argentina",
+    "Pais": "Masculino",
+    "Curso": [
+      "C#"
+    ],
+    "Cuit": "20460401454"
+  }
+]
