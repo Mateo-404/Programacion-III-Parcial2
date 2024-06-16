@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaForm
 {
-    internal class Ingresante
+    public class Ingresante
     {
         string nombre;
         string direccion;
@@ -34,6 +34,9 @@ namespace PracticaForm
             this.Curso = curso;
             this.Pais = pais;
         }
+
+
+        public Ingresante() { }
 
         public override String ToString()
         {

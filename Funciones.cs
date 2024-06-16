@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace PracticaForm
 {
@@ -57,7 +59,88 @@ namespace PracticaForm
                 return calculado == digito;
             }
         }
+        // <-- SERIALIZACIONES -->
+        // Retornar lista de Alumnos a Partir de Archivo.txt
+        public static List<Ingresante> deserializarIngresanteTXT(string archivo){
+            // Si el Archivo existe
+            try
+            {
+                if (File.Exists(archivo))
+                {
+                    List<Ingresante> _ListaAlumnos = new List<Ingresante>();
+                    StreamReader _lector = new StreamReader(archivo);
+                    // Leer Linea por Linea hasta el Fin del archivo
+                    while (!_lector.EndOfStream){
+                        string linea = _lector.ReadLine();
+                        string[] campos = linea.Split('|');
 
+                        Ingresante _ingresante = new Ingresante();
+                        _ingresante.Nombre = campos[0];
+                        _ingresante.Direccion = campos[1];
+                        _ingresante.Edad = int.Parse(campos[2]);
+                        _ingresante.Cuit = campos[3];
+                        _ingresante.Genero = campos[4];
+                        _ingresante.Pais = campos[5];
+                        // Cursos como Lista de Strings
+                        string[] _cursos = {campos[6]};
+                        _ingresante.Curso = _cursos;
+
+                        _ListaAlumnos.Add(_ingresante);
+                    }
+                    return _ListaAlumnos;
+                }else{throw new Exception("No se encontro el archivo " + archivo);}
+            }
+            catch (Exception e)
+            {
+                
+                Funciones.mError(Form3.ActiveForm, e.Message);
+                Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
+                return null;
+            }
+        }
+        // XML
+        public static bool serializarIngresanteXML(List<Ingresante> _listaAlumnos, string nombre_archivo){
+            try
+            {
+                StreamWriter escritor = new StreamWriter(nombre_archivo + ".xml");
+            
+                XmlSerializer serializador = new XmlSerializer(typeof(List<Ingresante>));
+                serializador.Serialize(escritor, _listaAlumnos);
+            
+                return true;
+            }
+            catch (Exception e)
+            {
+                Funciones.mError(Form3.ActiveForm, e.Message);
+                Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
+                return false;
+            }
+        }
+
+
+        // JSON
+        public static bool serializarIngresanteJSON(List<Ingresante> _listaAlumnos, string nombre_archivo){
+           
+            try
+            {
+                StreamWriter _escritor = new StreamWriter(nombre_archivo +".json");
+                //Genero el objeto de configuración de la serialización.
+                JsonSerializerOptions opciones = new JsonSerializerOptions();
+                opciones.WriteIndented = true;
+                _escritor.Write(JsonSerializer.Serialize(_listaAlumnos, opciones));
+                _escritor.Close();
+                _escritor.Dispose();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Funciones.mError(Form3.ActiveForm, e.Message);
+                Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
+                return false;
+            }
+        }
+
+        // <-- MENSAJES -->
         public static void mError(Form actual, string mensaje)
         {
             MessageBox.Show(actual, mensaje, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);

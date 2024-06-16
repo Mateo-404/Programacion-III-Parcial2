@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfIngresante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ingresante>
+    <Nombre>Mateo Gariboglio</Nombre>
+    <Direccion>Clarke 1053</Direccion>
+    <Edad>20</Edad>
+    <Genero>Argentina</Genero>
+    <Pais>Masculino</Pais>
+    <Curso>
+      <string>C#</string>
+    </Curso>
+    <Cuit>20460401454</Cuit>
+  </Ingresante>
+  <Ingresante>
+    <Nombre>Giorgio Uberti</Nombre>
+    <Direccion>Cronos 103</Direccion>
+    <Edad>20</Edad>
+    <Genero>Argentina</Genero>
+    <Pais>Masculino</Pais>
+    <Curso>
+      <string>C#</string>
+    </Curso>
+    <Cuit>20460401454</Cuit>
+  </Ingresante>
+</ArrayOfIngresante>

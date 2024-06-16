@@ -48,11 +48,70 @@ namespace PracticaForm
 
         }
 
-       
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            MessageBox.Show(cbCExp.Text);
+            try
+            {
+                // Si Ninguno de los 2 Tpos de Serializaciones está Seleccionado
+                if (!rbXML.Checked && !rbJSON.Checked) { throw new Exception("Debe seleccionar un tipo de Serialización"); }
+                bool xml, json;
+                xml = json = false;
+                
+                if (rbXML.Checked) xml = true; if (rbJSON.Checked) json = true;
+
+                // <-- C# -->
+                if (cbCExp.Checked)
+                {
+                    // Si existe el archivo C#.txt
+                    if (File.Exists("C#.txt"))
+                    {
+                        // Si no hay error al momento de Deserializar
+                        if (Funciones.deserializarIngresanteTXT("C#.txt") != null)
+                        {
+                            // <-- SERIALIZACIONES -->
+                            // XML
+                            if (xml) Funciones.serializarIngresanteXML(Funciones.deserializarIngresanteTXT("C#.txt"), "cursosC#");
+                            // JSON
+                            if (json) Funciones.serializarIngresanteJSON(Funciones.deserializarIngresanteTXT("C#.txt"), "cursosC#");
+
+                        }
+                    }
+                    else { throw new Exception("No se encontro el archivo C#.txt"); }
+                }
+
+                // <-- C++ -->
+                if (cbExpCPlus.Checked)
+                {
+                    if (File.Exists("C++.txt"))
+                    {
+                        if (Funciones.deserializarIngresanteTXT("C++.txt") != null)
+                        {
+                            if (xml) Funciones.serializarIngresanteXML(Funciones.deserializarIngresanteTXT("C++.txt"), "cursosC++");
+                            if (json) Funciones.serializarIngresanteJSON(Funciones.deserializarIngresanteTXT("C++.txt"), "cursosC++");
+                        }
+                    }
+                    else { throw new Exception("No se encontro el archivo C++.txt"); }
+                }
+                // <-- JavaScript -->
+                if (cbExpJavaScript.Checked)
+                {
+                    if (File.Exists("JavaScript.txt"))
+                    {
+                        if (Funciones.deserializarIngresanteTXT("JavaScript.txt") != null)
+                        {
+                            if (xml) Funciones.serializarIngresanteXML(Funciones.deserializarIngresanteTXT("JavaScript.txt"), "cursosJS");
+                            if (json) Funciones.serializarIngresanteJSON(Funciones.deserializarIngresanteTXT("JavaScript.txt"), "cursosJS");
+                        }
+                    }
+                    else { throw new Exception("No se encontro el archivo JavaScript.txt"); }
+                }
+                Funciones.mOk(this, "¡Exportacion realizada con exito!");
+            }
+            catch (Exception ex)
+            {
+                Funciones.mAdvertencia(this, ex.Message);
+            }
         }
     }
 }
