@@ -105,6 +105,7 @@ namespace PracticaForm
                     }
                     else { throw new Exception("No se encontro el archivo JavaScript.txt"); }
                 }
+                Funciones.mOk(this, "¡Exportacion realizada con exito!");
             }
             catch (Exception ex)
             {
