@@ -35,6 +35,9 @@ namespace PracticaForm
             this.Pais = pais;
         }
 
+
+        public Ingresante() { }
+
         public override String ToString()
         {
             return Nombre + "\n" + Direccion + "\n" + "edad: " + Edad + "\n" + " Cuit:" + Cuit + "\n" + "Genero :" + Genero + "\n" + Pais;

@@ -30,7 +30,7 @@ namespace PracticaForm
                 string[] curso = new string[3];
                 if (c1 == "" && c2 == "" && c3 == "")
                 {
-                    MessageBox.Show("Seleccione una opción para curso");
+                    MessageBox.Show("Seleccione una opciï¿½n para curso");
                 }
                 else
                 {
