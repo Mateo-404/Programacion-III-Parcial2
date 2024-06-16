@@ -53,3 +53,22 @@ C:\Users\Grary\Documents\GitHub\Programacion-III-UTN\Parcial-2\Programacion-III-
 C:\Users\Grary\Documents\GitHub\Programacion-III-UTN\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.pdb
 C:\Users\Grary\Documents\GitHub\Programacion-III-UTN\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.genruntimeconfig.cache
 C:\Users\Grary\Documents\GitHub\Programacion-III-UTN\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\ref\PracticaForm.dll
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.exe
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.deps.json
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.runtimeconfig.json
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.dll
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.pdb
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.Form1.resources
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.Form2.resources
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.Form3.resources
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.csproj.GenerateResource.cache
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.AssemblyInfoInputs.cache
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.AssemblyInfo.cs
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.csproj.CoreCompileInputs.cache
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.sourcelink.json
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.dll
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\refint\PracticaForm.dll
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.pdb
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.genruntimeconfig.cache
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\ref\PracticaForm.dll

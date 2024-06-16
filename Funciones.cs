@@ -63,32 +63,38 @@ namespace PracticaForm
         // Retornar lista de Alumnos a Partir de Archivo.txt
         public static List<Ingresante> deserializarIngresanteTXT(string archivo){
             // Si el Archivo existe
-            if (File.Exists(archivo))
+            try
             {
-                List<Ingresante> _ListaAlumnos = new List<Ingresante>();
-                StreamReader _lector = new StreamReader(archivo);
-                // Leer Linea por Linea hasta el Fin del archivo
-                while (!_lector.EndOfStream){
-                    string linea = _lector.ReadLine();
-                    string[] campos = linea.Split('|');
+                if (File.Exists(archivo))
+                {
+                    List<Ingresante> _ListaAlumnos = new List<Ingresante>();
+                    StreamReader _lector = new StreamReader(archivo);
+                    // Leer Linea por Linea hasta el Fin del archivo
+                    while (!_lector.EndOfStream){
+                        string linea = _lector.ReadLine();
+                        string[] campos = linea.Split('|');
 
-                    Ingresante _ingresante = new Ingresante();
-                    _ingresante.Nombre = campos[0];
-                    _ingresante.Direccion = campos[1];
-                    _ingresante.Edad = int.Parse(campos[2]);
-                    _ingresante.Cuit = campos[3];
-                    _ingresante.Genero = campos[4];
-                    _ingresante.Pais = campos[5];
-                    // Cursos como Lista de Strings
-                    string[] _cursos = {campos[6]};
-                    _ingresante.Curso = _cursos;
+                        Ingresante _ingresante = new Ingresante();
+                        _ingresante.Nombre = campos[0];
+                        _ingresante.Direccion = campos[1];
+                        _ingresante.Edad = int.Parse(campos[2]);
+                        _ingresante.Cuit = campos[3];
+                        _ingresante.Genero = campos[4];
+                        _ingresante.Pais = campos[5];
+                        // Cursos como Lista de Strings
+                        string[] _cursos = {campos[6]};
+                        _ingresante.Curso = _cursos;
 
-                    _ListaAlumnos.Add(_ingresante);
-                }
-                return _ListaAlumnos;
+                        _ListaAlumnos.Add(_ingresante);
+                    }
+                    return _ListaAlumnos;
+                }else{throw new Exception("No se encontro el archivo " + archivo);}
             }
-            else
+            catch (Exception e)
             {
+                
+                Funciones.mError(Form3.ActiveForm, e.Message);
+                Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
                 return null;
             }
         }
@@ -106,6 +112,7 @@ namespace PracticaForm
             catch (Exception e)
             {
                 Funciones.mError(Form3.ActiveForm, e.Message);
+                Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
                 return false;
             }
         }
@@ -128,6 +135,7 @@ namespace PracticaForm
             catch (Exception e)
             {
                 Funciones.mError(Form3.ActiveForm, e.Message);
+                Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
                 return false;
             }
         }
