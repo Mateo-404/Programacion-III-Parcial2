@@ -50,7 +50,10 @@ namespace PracticaForm
 
         public void Guardar(List<Ingresante> ingresantes, List<string> cursos)
         {
+            if () 
+            { 
             
+            }
             //guardar en archivo 
             try
             {
