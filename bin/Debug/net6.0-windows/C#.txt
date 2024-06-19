@@ -1,2 +1,0 @@
-Mateo Gariboglio|Clarke 1053|20|20460401454|Argentina|Masculino|C#
-Giorgio Uberti|Cronos 103|20|20460401454|Argentina|Masculino|C#

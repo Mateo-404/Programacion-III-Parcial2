@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.IO;
 
 namespace PracticaForm
 {
@@ -60,12 +61,19 @@ namespace PracticaForm
             }
         }
 
+        //Referencia de los archicos de cada curso
+        private static string carpetaCursos = @"C:\Cursos\";
         //Funcion de guardar de estudiante
         public static bool guardarEstudiante(string nombreCurso, Ingresante estudiante)
         {
             try
             {
-                nombreCurso = nombreCurso + ".txt";
+                if (!Directory.Exists(carpetaCursos))
+                {
+                    Directory.CreateDirectory(carpetaCursos);
+                }
+
+                string archivoCurso = Path.Combine(carpetaCursos, nombreCurso + ".txt");
                 StringBuilder estudianteFormato = new StringBuilder();
                 
                 estudianteFormato.Append(estudiante.Nombre + "|");
@@ -76,33 +84,72 @@ namespace PracticaForm
                 estudianteFormato.Append(estudiante.Genero + "|");
                 estudianteFormato.Append(nombreCurso + "|");
 
-                //verificamos que exista el archivo
+                //Verificamos que exista el archivo
                 if (File.Exists(nombreCurso))
                 {
-                    //leemos el archivo
-                    foreach (string linea in File.ReadLines(nombreCurso))
+                    // Contar la cantidad de líneas para verificar el límite de 40 inscriptos
+                    var lineas = File.ReadAllLines(archivoCurso);
+                    if (lineas.Length >= 40)
                     {
-                        if (estudianteFormato.Equals(linea)) 
+                        MessageBox.Show("El curso ya tiene 40 inscriptos, no se pueden agregar más estudiantes.");
+                        throw new Exception("El curso ya tiene 40 inscriptos, no se pueden agregar más estudiantes.");
+                    }
+
+                    //leemos el archivo y comparamos
+                    foreach (string linea in lineas)
+                    {
+                        if (CompararEstudiantes(estudianteFormato.ToString(), linea)) 
                         {
-                            throw new Exception("existe el estudiante, no se puede guardar");
+                            MessageBox.Show("El estudiante ya está inscripto en este curso.");
+                            throw new Exception("El estudiante ya está inscripto en este curso.");
+
                         }
                     }
 
-                    StreamWriter streamWriter = new StreamWriter(nombreCurso, true);
-
                 }
+
+                //Si hay lugar y el ingresnate no xiste en el arciho se agrega
+                using (StreamWriter streamWriter = new StreamWriter(archivoCurso, true))
+                {
+                    streamWriter.WriteLine(estudianteFormato.ToString());
+                }
+
+                return true;
+
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
+                return false;
             }
-            return false;
         }
 
+        //Comparamos si existe el estudiante en el curso
+        private static bool CompararEstudiantes(string estudianteFormato, string lineaArchivo)
+        {
+            var camposEstudiante = estudianteFormato.Split('|');
+            var camposLinea = lineaArchivo.Split('|');
 
-        // <-- SERIALIZACIONES -->
-        // Retornar lista de Alumnos a Partir de Archivo.txt
-        public static List<Ingresante> deserializarIngresanteTXT(string archivo){
+            if (camposEstudiante.Length != camposLinea.Length)
+            {
+                return false;
+            }
+
+            // Comparar los campos necesarios (excepto el último que es el nombre del curso)
+            for (int i = 0; i < camposEstudiante.Length - 1; i++)
+            {
+                if (!camposEstudiante[i].Equals(camposLinea[i]))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+    // <-- SERIALIZACIONES -->
+    // Retornar lista de Alumnos a Partir de Archivo.txt
+    public static List<Ingresante> deserializarIngresanteTXT(string archivo){
             // Si el Archivo existe
             try
             {

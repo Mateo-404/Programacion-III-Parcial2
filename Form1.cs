@@ -43,8 +43,22 @@ namespace PracticaForm
                 string pais = lbPais.Text.Trim();
 
                 Ingresante ing = new Ingresante(nombre, direccion, edad, cuit, genero, pais, curso);
-                
 
+
+                bool guardado = false;
+
+                if (!string.IsNullOrEmpty(c1))
+                {
+                    guardado = Funciones.guardarEstudiante(c1, ing) || guardado;
+                }
+                if (!string.IsNullOrEmpty(c2))
+                {
+                    guardado = Funciones.guardarEstudiante(c2, ing) || guardado;
+                }
+                if (!string.IsNullOrEmpty(c3))
+                {
+                    guardado = Funciones.guardarEstudiante(c3, ing) || guardado;
+                }
 
                 //if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
                 if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
@@ -54,18 +68,6 @@ namespace PracticaForm
                         List<Ingresante> listaIngresantes = new List<Ingresante>();
                         listaIngresantes.Add(ing);
 
-                        if (!c1.Equals(""))
-                        {
-                            Funciones.guardarEstudiante(c1, ing);   
-                        }
-                        if (!c2.Equals(""))
-                        {
-                            Funciones.guardarEstudiante(c2, ing);
-                        }
-                        if (!c3.Equals(""))
-                        {
-                            Funciones.guardarEstudiante(c3, ing);
-                        }
                         this.Vaciar();
                     }
                     else
@@ -81,7 +83,6 @@ namespace PracticaForm
                     this.Vaciar();
 
                 }
-
             }
             else
             {
