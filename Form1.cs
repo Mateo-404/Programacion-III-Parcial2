@@ -43,7 +43,7 @@ namespace PracticaForm
                 string pais = lbPais.Text.Trim();
 
                 Ingresante ing = new Ingresante(nombre, direccion, edad, cuit, genero, pais, curso);
-
+                
 
 
                 //if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
@@ -54,7 +54,18 @@ namespace PracticaForm
                         List<Ingresante> listaIngresantes = new List<Ingresante>();
                         listaIngresantes.Add(ing);
 
-                        ing.Guardar(listaIngresantes, new List<string>(curso));
+                        if (!c1.Equals(""))
+                        {
+                            Funciones.guardarEstudiante(c1, ing);   
+                        }
+                        if (!c2.Equals(""))
+                        {
+                            Funciones.guardarEstudiante(c2, ing);
+                        }
+                        if (!c3.Equals(""))
+                        {
+                            Funciones.guardarEstudiante(c3, ing);
+                        }
                         this.Vaciar();
                     }
                     else

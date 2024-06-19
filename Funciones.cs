@@ -59,6 +59,47 @@ namespace PracticaForm
                 return calculado == digito;
             }
         }
+
+        //Funcion de guardar de estudiante
+        public static bool guardarEstudiante(string nombreCurso, Ingresante estudiante)
+        {
+            try
+            {
+                nombreCurso = nombreCurso + ".txt";
+                StringBuilder estudianteFormato = new StringBuilder();
+                
+                estudianteFormato.Append(estudiante.Nombre + "|");
+                estudianteFormato.Append(estudiante.Direccion + "|");
+                estudianteFormato.Append(estudiante.Edad + "|");
+                estudianteFormato.Append(estudiante.Cuit + "|");
+                estudianteFormato.Append(estudiante.Pais + "|");
+                estudianteFormato.Append(estudiante.Genero + "|");
+                estudianteFormato.Append(nombreCurso + "|");
+
+                //verificamos que exista el archivo
+                if (File.Exists(nombreCurso))
+                {
+                    //leemos el archivo
+                    foreach (string linea in File.ReadLines(nombreCurso))
+                    {
+                        if (estudianteFormato.Equals(linea)) 
+                        {
+                            throw new Exception("existe el estudiante, no se puede guardar");
+                        }
+                    }
+
+                    StreamWriter streamWriter = new StreamWriter(nombreCurso, true);
+
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return false;
+        }
+
+
         // <-- SERIALIZACIONES -->
         // Retornar lista de Alumnos a Partir de Archivo.txt
         public static List<Ingresante> deserializarIngresanteTXT(string archivo){
