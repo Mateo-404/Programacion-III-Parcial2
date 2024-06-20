@@ -45,43 +45,39 @@ namespace PracticaForm
                 Ingresante ing = new Ingresante(nombre, direccion, edad, cuit, genero, pais, curso);
 
 
-                bool guardado = false;
-
-                if (!string.IsNullOrEmpty(c1))
-                {
-                    guardado = Funciones.guardarEstudiante(c1, ing) || guardado;
-                }
-                if (!string.IsNullOrEmpty(c2))
-                {
-                    guardado = Funciones.guardarEstudiante(c2, ing) || guardado;
-                }
-                if (!string.IsNullOrEmpty(c3))
-                {
-                    guardado = Funciones.guardarEstudiante(c3, ing) || guardado;
-                }
-
                 //if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
-                if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
+                if (Funciones.guardarEstudiante(c1, ing) || Funciones.guardarEstudiante(c2, ing) || Funciones.guardarEstudiante(c3, ing))
                 {
-                    if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                    {
-                        List<Ingresante> listaIngresantes = new List<Ingresante>();
-                        listaIngresantes.Add(ing);
 
-                        this.Vaciar();
+                    if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
+                    {
+                        if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                        {
+                            List<Ingresante> listaIngresantes = new List<Ingresante>();
+                            listaIngresantes.Add(ing);
+                            Funciones.guardarEstudiante(c1, ing);
+                            Funciones.guardarEstudiante(c2, ing);
+                            Funciones.guardarEstudiante(c3, ing);
+
+                            this.Vaciar();
+                        }
+                        else
+                        {
+                            MessageBox.Show("verifique los datos e intente nuevamente");
+                        }
+
                     }
                     else
                     {
-                        MessageBox.Show("verifique los datos e intente nuevamente");
+                        MessageBox.Show("Datos Descartados");
+
+                        this.Vaciar();
+
                     }
-
                 }
-                else
+                else 
                 {
-                    MessageBox.Show("Datos Descartados");
-
-                    this.Vaciar();
-
+                    MessageBox.Show("Ingrese otros valores");
                 }
             }
             else

@@ -62,7 +62,7 @@ namespace PracticaForm
         }
 
         //Referencia de los archicos de cada curso
-        private static string carpetaCursos = @"C:\Cursos\";
+        private static string carpetaCursos = @"C:\Users\diazs\OneDrive\Escritorio\repo\Programacion-III-Parcial2\bin\Debug\net6.0-windows";
         //Funcion de guardar de estudiante
         public static bool guardarEstudiante(string nombreCurso, Ingresante estudiante)
         {
@@ -75,15 +75,8 @@ namespace PracticaForm
                 }
 
                 string archivoCurso = Path.Combine(carpetaCursos, nombreCurso + ".txt");
-                StringBuilder estudianteFormato = new StringBuilder();
+                string estudianteFormato = $"{estudiante.Nombre}|{estudiante.Direccion}|{estudiante.Edad}|{estudiante.Cuit}|{estudiante.Pais}|{estudiante.Genero}|{nombreCurso}|";
 
-                estudianteFormato.Append(estudiante.Nombre + "|");
-                estudianteFormato.Append(estudiante.Direccion + "|");
-                estudianteFormato.Append(estudiante.Edad + "|");
-                estudianteFormato.Append(estudiante.Cuit + "|");
-                estudianteFormato.Append(estudiante.Pais + "|");
-                estudianteFormato.Append(estudiante.Genero + "|");
-                estudianteFormato.Append(nombreCurso + "|");
 
                 // Verificar si el archivo del curso ya existe
                 if (File.Exists(archivoCurso))
@@ -92,7 +85,6 @@ namespace PracticaForm
                     var lineas = File.ReadAllLines(archivoCurso);
                     if (lineas.Length >= 40)
                     {
-                        MessageBox.Show("El curso ya tiene 40 inscriptos, no se pueden agregar más estudiantes.");
                         throw new Exception("El curso ya tiene 40 inscriptos, no se pueden agregar más estudiantes.");
                     }
 
@@ -102,7 +94,6 @@ namespace PracticaForm
                         
                         if (estudianteFormato.ToString().Equals(linea))
                         {
-                            MessageBox.Show("El estudiante ya está inscripto en este curso.");
                             throw new Exception("El estudiante ya está inscripto en este curso.");
                         }
                     }
@@ -113,6 +104,7 @@ namespace PracticaForm
                 {
                     streamWriter.WriteLine(estudianteFormato.ToString());
                 }
+
                 return true;
             }
             catch (Exception e)
