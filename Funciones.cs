@@ -68,6 +68,7 @@ namespace PracticaForm
         {
             try
             {
+                // Verificar y crear la carpeta si no existe
                 if (!Directory.Exists(carpetaCursos))
                 {
                     Directory.CreateDirectory(carpetaCursos);
@@ -75,7 +76,7 @@ namespace PracticaForm
 
                 string archivoCurso = Path.Combine(carpetaCursos, nombreCurso + ".txt");
                 StringBuilder estudianteFormato = new StringBuilder();
-                
+
                 estudianteFormato.Append(estudiante.Nombre + "|");
                 estudianteFormato.Append(estudiante.Direccion + "|");
                 estudianteFormato.Append(estudiante.Edad + "|");
@@ -84,8 +85,8 @@ namespace PracticaForm
                 estudianteFormato.Append(estudiante.Genero + "|");
                 estudianteFormato.Append(nombreCurso + "|");
 
-                //Verificamos que exista el archivo
-                if (File.Exists(nombreCurso))
+                // Verificar si el archivo del curso ya existe
+                if (File.Exists(archivoCurso))
                 {
                     // Contar la cantidad de líneas para verificar el límite de 40 inscriptos
                     var lineas = File.ReadAllLines(archivoCurso);
@@ -95,56 +96,30 @@ namespace PracticaForm
                         throw new Exception("El curso ya tiene 40 inscriptos, no se pueden agregar más estudiantes.");
                     }
 
-                    //leemos el archivo y comparamos
+                    // Verificar si el estudiante ya está inscrito en este curso
                     foreach (string linea in lineas)
                     {
-                        if (CompararEstudiantes(estudianteFormato.ToString(), linea)) 
+                        
+                        if (estudianteFormato.ToString().Equals(linea))
                         {
                             MessageBox.Show("El estudiante ya está inscripto en este curso.");
                             throw new Exception("El estudiante ya está inscripto en este curso.");
-
                         }
                     }
-
                 }
 
-                //Si hay lugar y el ingresnate no xiste en el arciho se agrega
-                using (StreamWriter streamWriter = new StreamWriter(archivoCurso, true))
+                // Escribir los datos del estudiante en el archivo del curso
+                using StreamWriter streamWriter = new StreamWriter(archivoCurso, true);
                 {
                     streamWriter.WriteLine(estudianteFormato.ToString());
                 }
-
                 return true;
-
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
                 return false;
             }
-        }
-
-        //Comparamos si existe el estudiante en el curso
-        private static bool CompararEstudiantes(string estudianteFormato, string lineaArchivo)
-        {
-            var camposEstudiante = estudianteFormato.Split('|');
-            var camposLinea = lineaArchivo.Split('|');
-
-            if (camposEstudiante.Length != camposLinea.Length)
-            {
-                return false;
-            }
-
-            // Comparar los campos necesarios (excepto el último que es el nombre del curso)
-            for (int i = 0; i < camposEstudiante.Length - 1; i++)
-            {
-                if (!camposEstudiante[i].Equals(camposLinea[i]))
-                {
-                    return false;
-                }
-            }
-
-            return true;
         }
 
     // <-- SERIALIZACIONES -->
