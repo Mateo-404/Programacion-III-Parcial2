@@ -46,38 +46,51 @@ namespace PracticaForm
 
 
                 //if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
-                if (Funciones.guardarEstudiante(c1, ing) || Funciones.guardarEstudiante(c2, ing) || Funciones.guardarEstudiante(c3, ing))
+                if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
                 {
-
-                    if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
+                    if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                        List<Ingresante> listaIngresantes = new List<Ingresante>();
+                        listaIngresantes.Add(ing);
+
+                        //Bandera para sbaer si ya se guardo el estudiante
+                        bool estudianteGuardado = false;
+
+                        for (int i = 0; i < 3; i++) 
+                            {
+                            try
+                            {
+                                //Verificamos que el guardado sea exitoso
+                                if (Funciones.guardarEstudiante(curso[i], ing))
+                                {
+                                    estudianteGuardado = true;
+                                }
+
+                            }
+                            catch (Exception ex) {
+                                 MessageBox.Show(ex.Message);
+                                 break;
+                            }
+                        }
+                        if (estudianteGuardado)
                         {
-                            List<Ingresante> listaIngresantes = new List<Ingresante>();
-                            listaIngresantes.Add(ing);
-                            Funciones.guardarEstudiante(c1, ing);
-                            Funciones.guardarEstudiante(c2, ing);
-                            Funciones.guardarEstudiante(c3, ing);
+                            MessageBox.Show("Guardado exitoso");
+                        }
 
                             this.Vaciar();
-                        }
-                        else
-                        {
-                            MessageBox.Show("verifique los datos e intente nuevamente");
-                        }
-
                     }
                     else
                     {
-                        MessageBox.Show("Datos Descartados");
-
-                        this.Vaciar();
-
+                        MessageBox.Show("verifique los datos e intente nuevamente");
                     }
+
                 }
-                else 
+                else                    
                 {
-                    MessageBox.Show("Ingrese otros valores");
+                    MessageBox.Show("Datos Descartados");
+
+                    this.Vaciar();
+
                 }
             }
             else

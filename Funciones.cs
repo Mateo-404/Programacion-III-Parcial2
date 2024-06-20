@@ -81,8 +81,9 @@ namespace PracticaForm
                 // Verificar si el archivo del curso ya existe
                 if (File.Exists(archivoCurso))
                 {
-                    // Contar la cantidad de líneas para verificar el límite de 40 inscriptos
+                    // Lee el archivo linea por linea
                     var lineas = File.ReadAllLines(archivoCurso);
+                    // Contar la cantidad de líneas para verificar el límite de 40 inscriptos
                     if (lineas.Length >= 40)
                     {
                         throw new Exception("El curso ya tiene 40 inscriptos, no se pueden agregar más estudiantes.");
@@ -91,11 +92,12 @@ namespace PracticaForm
                     // Verificar si el estudiante ya está inscrito en este curso
                     foreach (string linea in lineas)
                     {
-                        
+
                         if (estudianteFormato.ToString().Equals(linea))
                         {
                             throw new Exception("El estudiante ya está inscripto en este curso.");
                         }
+
                     }
                 }
 
@@ -107,10 +109,10 @@ namespace PracticaForm
 
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                MessageBox.Show(e.Message);
-                return false;
+                //Lanza la excepcion personalizada
+                throw;
             }
         }
 
