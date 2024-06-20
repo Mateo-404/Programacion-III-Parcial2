@@ -6,7 +6,7 @@
     "Genero": "Masculino",
     "Pais": "Argentina",
     "Curso": [
-      "C#"
+      "JavaScript"
     ],
     "Cuit": "20-46040145-4"
   },
@@ -17,7 +17,18 @@
     "Genero": "Femenino",
     "Pais": "Uruguay",
     "Curso": [
-      "C#"
+      "JavaScript"
+    ],
+    "Cuit": "20-46040145-4"
+  },
+  {
+    "Nombre": "Fabiana",
+    "Direccion": "asfaf",
+    "Edad": 90,
+    "Genero": "Femenino",
+    "Pais": "Chile",
+    "Curso": [
+      "JavaScript"
     ],
     "Cuit": "20-46040145-4"
   }

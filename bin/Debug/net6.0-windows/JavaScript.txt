@@ -1,1 +1,3 @@
-Tomi|San Vicente|24|20-45827569-7|Argentina|No Binario|JavaScript|
+Mateo|saga|18|20-46040145-4|Argentina|Masculino|JavaScript|
+Yio|asgas|18|20-46040145-4|Uruguay|Femenino|JavaScript|
+Fabiana|asfaf|90|20-46040145-4|Chile|Femenino|JavaScript|

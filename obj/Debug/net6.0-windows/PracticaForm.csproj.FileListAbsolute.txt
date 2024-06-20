@@ -72,3 +72,22 @@ C:\Users\diazs\OneDrive\Escritorio\repo\Programacion-III-Parcial2\obj\Debug\net6
 C:\Users\diazs\OneDrive\Escritorio\repo\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.pdb
 C:\Users\diazs\OneDrive\Escritorio\repo\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.genruntimeconfig.cache
 C:\Users\diazs\OneDrive\Escritorio\repo\Programacion-III-Parcial2\obj\Debug\net6.0-windows\ref\PracticaForm.dll
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.exe
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.deps.json
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.runtimeconfig.json
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.dll
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\bin\Debug\net6.0-windows\PracticaForm.pdb
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.Form1.resources
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.Form2.resources
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.Form3.resources
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.csproj.GenerateResource.cache
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.AssemblyInfoInputs.cache
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.AssemblyInfo.cs
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.csproj.CoreCompileInputs.cache
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.sourcelink.json
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.dll
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\refint\PracticaForm.dll
+c:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.pdb
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\PracticaForm.genruntimeconfig.cache
+C:\Users\Gary\Documents\Practica\Programacion III\Parcial-2\Programacion-III-Parcial2\obj\Debug\net6.0-windows\ref\PracticaForm.dll

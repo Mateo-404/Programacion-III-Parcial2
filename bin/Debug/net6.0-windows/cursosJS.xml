@@ -7,7 +7,7 @@
     <Genero>Argentina</Genero>
     <Pais>Masculino</Pais>
     <Curso>
-      <string>C#</string>
+      <string>JavaScript</string>
     </Curso>
     <Cuit>20-46040145-4</Cuit>
   </Ingresante>
@@ -18,7 +18,18 @@
     <Genero>Uruguay</Genero>
     <Pais>Femenino</Pais>
     <Curso>
-      <string>C#</string>
+      <string>JavaScript</string>
+    </Curso>
+    <Cuit>20-46040145-4</Cuit>
+  </Ingresante>
+  <Ingresante>
+    <Nombre>Fabiana</Nombre>
+    <Direccion>asfaf</Direccion>
+    <Edad>90</Edad>
+    <Genero>Chile</Genero>
+    <Pais>Femenino</Pais>
+    <Curso>
+      <string>JavaScript</string>
     </Curso>
     <Cuit>20-46040145-4</Cuit>
   </Ingresante>

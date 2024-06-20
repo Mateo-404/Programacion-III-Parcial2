@@ -7,18 +7,7 @@
     <Genero>Argentina</Genero>
     <Pais>Masculino</Pais>
     <Curso>
-      <string>C#</string>
-    </Curso>
-    <Cuit>20-46040145-4</Cuit>
-  </Ingresante>
-  <Ingresante>
-    <Nombre>Yio</Nombre>
-    <Direccion>asgas</Direccion>
-    <Edad>18</Edad>
-    <Genero>Uruguay</Genero>
-    <Pais>Femenino</Pais>
-    <Curso>
-      <string>C#</string>
+      <string>C++</string>
     </Curso>
     <Cuit>20-46040145-4</Cuit>
   </Ingresante>

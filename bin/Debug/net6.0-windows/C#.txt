@@ -1,4 +1,2 @@
-Yio|a|20|20-45827569-7|Argentina|Masculino|C#|
-Yio|a|18|20-45827569-7|Argentina|Masculino|C#|
-
-Tomi|San Vicente|24|20-45827569-7|Argentina|No Binario|C#|
+Mateo|saga|18|20-46040145-4|Argentina|Masculino|C#|
+Yio|asgas|18|20-46040145-4|Uruguay|Femenino|C#|

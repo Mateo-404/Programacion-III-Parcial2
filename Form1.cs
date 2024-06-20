@@ -31,7 +31,7 @@ namespace PracticaForm
                 string[] curso = new string[3];
                 if (c1 == "" && c2 == "" && c3 == "")
                 {
-                    MessageBox.Show("Seleccione una opci�n para curso");
+                    MessageBox.Show("Seleccione una opcion para curso");
                 }
                 else
                 {
@@ -45,43 +45,31 @@ namespace PracticaForm
                 Ingresante ing = new Ingresante(nombre, direccion, edad, cuit, genero, pais, curso);
 
 
-                //if (MessageBox.Show(ing.ToString(), "Datos Ingresante", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+                //  Consulta si los Datos son Correctos
                 if (Funciones.mConsulta(this, "Datos Ingresante \n" + ing.ToString()))
                 {
+                    // Consulta SI los Cursos a los que se Inscribió son Correctos 
                     if (MessageBox.Show(ing.ToStringCursos(), "Cursos Inscripto", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        List<Ingresante> listaIngresantes = new List<Ingresante>();
-                        listaIngresantes.Add(ing);
-
-                        //Bandera para sbaer si ya se guardo el estudiante
-                        bool estudianteGuardado = false;
-
+                        // Para notificar los cursos que se guardaron con éxito
+                        string[] cursosGuardados = new string[3];
+                        // Guardamos Cursos
                         for (int i = 0; i < 3; i++) 
-                            {
-                            try
-                            {
-                                //Verificamos que el guardado sea exitoso
-                                if (Funciones.guardarEstudiante(curso[i], ing))
-                                {
-                                    estudianteGuardado = true;
-                                }
-
-                            }
-                            catch (Exception ex) {
-                                 MessageBox.Show(ex.Message);
-                                 break;
-                            }
-                        }
-                        if (estudianteGuardado)
                         {
-                            MessageBox.Show("Guardado exitoso");
+                            //Verificamos que Curso no este vacio y el guardado sea exitoso
+                            if (!curso[i].Equals("") && Funciones.guardarEstudiante(curso[i], ing))
+                            {
+                                cursosGuardados[i] = curso[i];
+                            }
                         }
 
-                            this.Vaciar();
+                        Funciones.mOk(this, "Los cursos Guardados con Exito fueron: " + string.Join(", ", cursosGuardados));
+
+                        this.Vaciar();
                     }
                     else
                     {
-                        MessageBox.Show("verifique los datos e intente nuevamente");
+                        MessageBox.Show("Verifique los Datos e intente nuevamente");
                     }
 
                 }
