@@ -63,7 +63,7 @@ namespace PracticaForm
                             }
                         }
 
-                        Funciones.mOk(this, "Los cursos Guardados con Exito fueron: " + string.Join(", ", cursosGuardados));
+                        Funciones.mOk(this, "Los cursos Guardados con Exito fueron: " + cursosGuardados[0] + "\n" + cursosGuardados[1] + "\n" + cursosGuardados[2]);
 
                         this.Vaciar();
                     }

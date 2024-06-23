@@ -1,2 +1,3 @@
 Mateo|saga|18|20-46040145-4|Argentina|Masculino|C#|
 Yio|asgas|18|20-46040145-4|Uruguay|Femenino|C#|
+aaa|aa|18|20-46040145-4|Uruguay|No Binario|C#|

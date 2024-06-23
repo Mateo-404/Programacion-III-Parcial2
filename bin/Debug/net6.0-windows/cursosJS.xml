@@ -4,8 +4,8 @@
     <Nombre>Mateo</Nombre>
     <Direccion>saga</Direccion>
     <Edad>18</Edad>
-    <Genero>Argentina</Genero>
-    <Pais>Masculino</Pais>
+    <Genero>Masculino</Genero>
+    <Pais>Argentina</Pais>
     <Curso>
       <string>JavaScript</string>
     </Curso>
@@ -15,8 +15,8 @@
     <Nombre>Yio</Nombre>
     <Direccion>asgas</Direccion>
     <Edad>18</Edad>
-    <Genero>Uruguay</Genero>
-    <Pais>Femenino</Pais>
+    <Genero>Femenino</Genero>
+    <Pais>Uruguay</Pais>
     <Curso>
       <string>JavaScript</string>
     </Curso>
@@ -26,8 +26,30 @@
     <Nombre>Fabiana</Nombre>
     <Direccion>asfaf</Direccion>
     <Edad>90</Edad>
-    <Genero>Chile</Genero>
-    <Pais>Femenino</Pais>
+    <Genero>Femenino</Genero>
+    <Pais>Chile</Pais>
+    <Curso>
+      <string>JavaScript</string>
+    </Curso>
+    <Cuit>20-46040145-4</Cuit>
+  </Ingresante>
+  <Ingresante>
+    <Nombre>aaa</Nombre>
+    <Direccion>aa</Direccion>
+    <Edad>18</Edad>
+    <Genero>No Binario</Genero>
+    <Pais>Uruguay</Pais>
+    <Curso>
+      <string>JavaScript</string>
+    </Curso>
+    <Cuit>20-46040145-4</Cuit>
+  </Ingresante>
+  <Ingresante>
+    <Nombre>aa</Nombre>
+    <Direccion>asfaf</Direccion>
+    <Edad>20</Edad>
+    <Genero>Masculino</Genero>
+    <Pais>Argentina</Pais>
     <Curso>
       <string>JavaScript</string>
     </Curso>

@@ -77,7 +77,7 @@ namespace PracticaForm
 
                         }
                     }
-                    else { throw new Exception("No se encontro el archivo C#.txt"); }
+                    else { throw new FileNotFoundException("No se encontro el archivo C#.txt"); }
                 }
 
                 // <-- C++ -->
@@ -91,7 +91,7 @@ namespace PracticaForm
                             if (json) Funciones.serializarIngresanteJSON(Funciones.deserializarIngresanteTXT("C++.txt"), "cursosC++");
                         }
                     }
-                    else { throw new Exception("No se encontro el archivo C++.txt"); }
+                    else { throw new FileNotFoundException("No se encontro el archivo C++.txt"); }
                 }
                 // <-- JavaScript -->
                 if (cbExpJavaScript.Checked)
@@ -104,7 +104,7 @@ namespace PracticaForm
                             if (json) Funciones.serializarIngresanteJSON(Funciones.deserializarIngresanteTXT("JavaScript.txt"), "cursosJS");
                         }
                     }
-                    else { throw new Exception("No se encontro el archivo JavaScript.txt"); }
+                    else { throw new FileNotFoundException("No se encontro el archivo JavaScript.txt"); }
                 }
                 Funciones.mOk(this, "¡Exportacion realizada con exito!");
             }

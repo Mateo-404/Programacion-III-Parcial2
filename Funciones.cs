@@ -139,9 +139,9 @@ namespace PracticaForm
         // Retornar lista de Alumnos a Partir de Archivo.txt
         public static List<Ingresante> deserializarIngresanteTXT(string archivo)
         {
-            // Si el Archivo existe
             try
             {
+                // Si el Archivo existe
                 if (File.Exists(archivo))
                 {
                     List<Ingresante> _ListaAlumnos = new List<Ingresante>();
@@ -167,7 +167,23 @@ namespace PracticaForm
                     }
                     return _ListaAlumnos;
                 }
-                else { throw new Exception("No se encontro el archivo " + archivo); }
+                else { throw new DirectoryNotFoundException("No se encontro el archivo " + archivo); }
+            }
+            catch (FileLoadException e){
+                Funciones.mError(Form3.ActiveForm, "Archivo existe pero no se puede cargar, intente cerrarlo y vuelva a enviar el Formulario");
+                return null;
+            }
+            catch (System.Security.SecurityException e){
+                Funciones.mError(Form3.ActiveForm, "No tiene permisos para leer el archivo, revise las propiedades y vuelva a enviar el Formulario");
+                return null;
+            }
+            catch (InvalidOperationException e){
+                Funciones.mError(Form3.ActiveForm, "Operación no permitida, revisar el archivo y vuelva a enviar el Formulario");
+                return null;
+            }
+            catch (IOException e){
+                Funciones.mError(Form3.ActiveForm, "Error al cargar Archivo, intente enviarlo de nuevo o modificar las propiedades del Archivo");
+                return null;
             }
             catch (Exception e)
             {
@@ -188,6 +204,10 @@ namespace PracticaForm
                 serializador.Serialize(escritor, _listaAlumnos);
 
                 return true;
+            }
+            catch (IOException e){
+                Funciones.mError(Form3.ActiveForm, "Error al intentar acceder a la información: " + e.Message);
+                return false;
             }
             catch (Exception e)
             {
@@ -212,6 +232,10 @@ namespace PracticaForm
                 _escritor.Close();
                 _escritor.Dispose();
                 return true;
+            }
+            catch (IOException e){
+                Funciones.mError(Form3.ActiveForm, "Error al intentar acceder a la información: " + e.Message);
+                return false;
             }
             catch (Exception e)
             {
