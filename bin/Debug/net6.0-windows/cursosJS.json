@@ -1,20 +1,20 @@
 [
   {
-    "Nombre": "Mateo",
-    "Direccion": "saga",
+    "Nombre": "z",
+    "Direccion": "z",
     "Edad": 18,
     "Genero": "Masculino",
-    "Pais": "Argentina",
+    "Pais": "Chile",
     "Curso": [
       "JavaScript"
     ],
     "Cuit": "20-46040145-4"
   },
   {
-    "Nombre": "Yio",
-    "Direccion": "asgas",
-    "Edad": 18,
-    "Genero": "Femenino",
+    "Nombre": "aa",
+    "Direccion": "aa",
+    "Edad": 50,
+    "Genero": "No Binario",
     "Pais": "Uruguay",
     "Curso": [
       "JavaScript"
@@ -22,11 +22,11 @@
     "Cuit": "20-46040145-4"
   },
   {
-    "Nombre": "Fabiana",
-    "Direccion": "asfaf",
-    "Edad": 90,
-    "Genero": "Femenino",
-    "Pais": "Chile",
+    "Nombre": "Mateo",
+    "Direccion": "a",
+    "Edad": 99,
+    "Genero": "Masculino",
+    "Pais": "Argentina",
     "Curso": [
       "JavaScript"
     ],

@@ -139,13 +139,14 @@ namespace PracticaForm
         // Retornar lista de Alumnos a Partir de Archivo.txt
         public static List<Ingresante> deserializarIngresanteTXT(string archivo)
         {
+            StreamReader _lector = null;
             try
             {
                 // Si el Archivo existe
                 if (File.Exists(archivo))
                 {
                     List<Ingresante> _ListaAlumnos = new List<Ingresante>();
-                    StreamReader _lector = new StreamReader(archivo);
+                    _lector = new StreamReader(archivo);
                     // Leer Linea por Linea hasta el Fin del archivo
                     while (!_lector.EndOfStream)
                     {
@@ -192,13 +193,23 @@ namespace PracticaForm
                 Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
                 return null;
             }
+            finally
+            {
+                // Liberar Recursos
+                if (_lector != null)
+                {
+                    _lector.Close();
+                    _lector.Dispose();
+                }
+            }
         }
         // XML
         public static bool serializarIngresanteXML(List<Ingresante> _listaAlumnos, string nombre_archivo)
         {
+            StreamWriter escritor = null;
             try
             {
-                StreamWriter escritor = new StreamWriter(nombre_archivo + ".xml");
+                escritor = new StreamWriter(nombre_archivo + ".xml");
 
                 XmlSerializer serializador = new XmlSerializer(typeof(List<Ingresante>));
                 serializador.Serialize(escritor, _listaAlumnos);
@@ -215,22 +226,29 @@ namespace PracticaForm
                 Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
                 return false;
             }
+            finally
+            {
+                // Liberar Recursos
+                if (escritor != null)
+                {
+                    escritor.Close();
+                    escritor.Dispose();
+                }
+            }
         }
 
 
         // JSON
         public static bool serializarIngresanteJSON(List<Ingresante> _listaAlumnos, string nombre_archivo)
         {
-
+            StreamWriter _escritor = null;
             try
             {
-                StreamWriter _escritor = new StreamWriter(nombre_archivo + ".json");
+                _escritor = new StreamWriter(nombre_archivo + ".json");
                 //Genero el objeto de configuración de la serialización.
                 JsonSerializerOptions opciones = new JsonSerializerOptions();
                 opciones.WriteIndented = true;
                 _escritor.Write(JsonSerializer.Serialize(_listaAlumnos, opciones));
-                _escritor.Close();
-                _escritor.Dispose();
                 return true;
             }
             catch (IOException e){
@@ -242,6 +260,15 @@ namespace PracticaForm
                 Funciones.mError(Form3.ActiveForm, e.Message);
                 Funciones.mAdvertencia(Form3.ActiveForm, "Recomendamos que revise el archivo y vuelva a enviar el Formulario");
                 return false;
+            }
+            finally
+            {
+                // Liberar Recursos
+                if (_escritor != null)
+                {
+                    _escritor.Close();
+                    _escritor.Dispose();
+                }
             }
         }
 

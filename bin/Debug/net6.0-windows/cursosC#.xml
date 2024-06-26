@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfIngresante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Ingresante>
-    <Nombre>Mateo</Nombre>
-    <Direccion>saga</Direccion>
+    <Nombre>z</Nombre>
+    <Direccion>z</Direccion>
     <Edad>18</Edad>
-    <Genero>Argentina</Genero>
-    <Pais>Masculino</Pais>
+    <Genero>Masculino</Genero>
+    <Pais>Chile</Pais>
     <Curso>
       <string>C#</string>
     </Curso>
     <Cuit>20-46040145-4</Cuit>
   </Ingresante>
   <Ingresante>
-    <Nombre>Yio</Nombre>
-    <Direccion>asgas</Direccion>
-    <Edad>18</Edad>
-    <Genero>Uruguay</Genero>
-    <Pais>Femenino</Pais>
+    <Nombre>aa</Nombre>
+    <Direccion>aa</Direccion>
+    <Edad>50</Edad>
+    <Genero>No Binario</Genero>
+    <Pais>Uruguay</Pais>
+    <Curso>
+      <string>C#</string>
+    </Curso>
+    <Cuit>20-46040145-4</Cuit>
+  </Ingresante>
+  <Ingresante>
+    <Nombre>Mateo</Nombre>
+    <Direccion>a</Direccion>
+    <Edad>99</Edad>
+    <Genero>Masculino</Genero>
+    <Pais>Argentina</Pais>
     <Curso>
       <string>C#</string>
     </Curso>

@@ -1,21 +1,32 @@
 [
   {
-    "Nombre": "Mateo",
-    "Direccion": "saga",
+    "Nombre": "z",
+    "Direccion": "z",
     "Edad": 18,
     "Genero": "Masculino",
-    "Pais": "Argentina",
+    "Pais": "Chile",
     "Curso": [
       "C#"
     ],
     "Cuit": "20-46040145-4"
   },
   {
-    "Nombre": "Yio",
-    "Direccion": "asgas",
-    "Edad": 18,
-    "Genero": "Femenino",
+    "Nombre": "aa",
+    "Direccion": "aa",
+    "Edad": 50,
+    "Genero": "No Binario",
     "Pais": "Uruguay",
+    "Curso": [
+      "C#"
+    ],
+    "Cuit": "20-46040145-4"
+  },
+  {
+    "Nombre": "Mateo",
+    "Direccion": "a",
+    "Edad": 99,
+    "Genero": "Masculino",
+    "Pais": "Argentina",
     "Curso": [
       "C#"
     ],

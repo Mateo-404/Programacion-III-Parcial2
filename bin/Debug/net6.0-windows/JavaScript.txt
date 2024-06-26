@@ -1,5 +1,3 @@
-Mateo|saga|18|20-46040145-4|Argentina|Masculino|JavaScript|
-Yio|asgas|18|20-46040145-4|Uruguay|Femenino|JavaScript|
-Fabiana|asfaf|90|20-46040145-4|Chile|Femenino|JavaScript|
-aaa|aa|18|20-46040145-4|Uruguay|No Binario|JavaScript|
-aa|asfaf|20|20-46040145-4|Argentina|Masculino|JavaScript|
+z|z|18|20-46040145-4|Chile|Masculino|JavaScript|
+aa|aa|50|20-46040145-4|Uruguay|No Binario|JavaScript|
+Mateo|a|99|20-46040145-4|Argentina|Masculino|JavaScript|
