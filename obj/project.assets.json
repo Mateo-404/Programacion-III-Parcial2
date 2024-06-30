@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Grary\\.nuget\\packages\\": {},
+    "C:\\Users\\diazs\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\PracticaForm.csproj",
+      "projectUniqueName": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\PracticaForm.csproj",
       "projectName": "PracticaForm",
-      "projectPath": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\PracticaForm.csproj",
-      "packagesPath": "C:\\Users\\Grary\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Grary\\Documents\\GitHub\\Programacion-III-UTN\\Parcial-2\\Programacion-III-Parcial2\\obj\\",
+      "projectPath": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\PracticaForm.csproj",
+      "packagesPath": "C:\\Users\\diazs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diazs\\OneDrive\\Escritorio\\repo\\Programacion-III-Parcial2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Grary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -75,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

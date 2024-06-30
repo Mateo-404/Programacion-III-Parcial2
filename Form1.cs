@@ -1,5 +1,6 @@
 using System;
 using System.Drawing.Text;
+using System.Data.SqlClient;
 
 namespace PracticaForm
 {
