@@ -55,7 +55,7 @@ namespace PracticaForm
                         // Para notificar los cursos que se guardaron con éxito
                         string[] cursosGuardados = new string[3];
                         // Guardamos Cursos
-                        for (int i = 0; i < 3; i++) 
+                        for (int i = 0; i < 3; i++)
                         {
                             //Verificamos que Curso no este vacio y el guardado sea exitoso
                             if (!curso[i].Equals("") && Funciones.guardarEstudiante(curso[i], ing))
@@ -64,8 +64,16 @@ namespace PracticaForm
                             }
                         }
 
-                        Funciones.mOk(this, "Los cursos Guardados con Exito fueron: " + cursosGuardados[0] + "\n" + cursosGuardados[1] + "\n" + cursosGuardados[2]);
-
+                        Funciones.mOk(this, "Los cursos Guardados (Localmente) con Exito fueron: " + cursosGuardados[0] + "\n" + cursosGuardados[1] + "\n" + cursosGuardados[2]);
+                        // Almacenar en BD
+                        if (Conexion.registrarIngresanteBD(ing))
+                        {
+                            Funciones.mOk(this, "Estudiante Guardado con Exito en la Base de Datos");
+                        }
+                        else
+                        {
+                            Funciones.mError(this, "No se pudo registrar el Estudiante en la Base de Datos");
+                        }
                         this.Vaciar();
                     }
                     else
@@ -74,7 +82,7 @@ namespace PracticaForm
                     }
 
                 }
-                else                    
+                else
                 {
                     MessageBox.Show("Datos Descartados");
 

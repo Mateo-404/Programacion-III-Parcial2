@@ -1,3 +1,10 @@
 z|z|18|20-46040145-4|Chile|Masculino|C#|
 aa|aa|50|20-46040145-4|Uruguay|No Binario|C#|
 Mateo|a|99|20-46040145-4|Argentina|Masculino|C#|
+Mateo|a|33|20-46040145-4|Chile|No Binario|C#|
+m|a|90|20-46040145-4|Uruguay|Masculino|C#|
+M|a|99|20-46040145-4|Uruguay|Masculino|C#|
+Fernando|Clarke 1053|30|20-46040145-4|Chile|Masculino|C#|
+ossas|asfa|18|20-46040145-4|Uruguay|No Binario|C#|
+pepe|a|18|20-46040145-4|Chile|Masculino|C#|
+garcia|el principito|18|20-46040145-4|Argentina|Femenino|C#|

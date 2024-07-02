@@ -40,6 +40,10 @@ serializado en xml
 - Serialización Json deberá generar para el curso indicado un archivo nombrecurso.json
 serializado en json
 - Se evaluará el manejo de excepciones.
+
+## Conexión a la base de datos
+Se solicita que una vez guardado el alumno en el archivo TXT, se guarden los datos en una tabla de base de datos donde contendrán los datos guardados en el archivo. La tabla podrá aceptar que el alumno aparezca más de una vez para lo cual sugerimos que la clave principal de la tabla se un id auto incremental. La conexión a la base no podrá estar “hardcodeada”, debiendo tomar los datos del App.config.  
+
 ## Consideraciones 
 - El presente práctico podrá ser realizado en grupo con no más de 4 alumnos por
 grupo.

@@ -65,6 +65,7 @@ namespace PracticaForm
         //Funcion de guardar de estudiante
         public static bool guardarEstudiante(string nombreCurso, Ingresante estudiante)
         {
+            StreamWriter escritor = null;
             try
             {
                 string archivoCurso = nombreCurso + ".txt";
@@ -111,21 +112,23 @@ namespace PracticaForm
                     }
 
                     // SI TODO ESTÁ EN ORDEN anexamos nuevos Estudiantes al Archivo
-                    StreamWriter escritor = new StreamWriter(archivoCurso, true);
+                    escritor = new StreamWriter(archivoCurso, true);
                     escritor.WriteLine(estudianteFormato.ToString());
-                    // Liberamos Recursos
-                    escritor.Close();
-                    escritor.Dispose();
+
+                    //! ESCRIBIR ESTUDIANTE EN BD
+                    
                 }
                 // Caso de que el Archivo NO EXISTA
-                else{
+                else
+                {
 
                     // Crear el Archivo del CURSO
                     // Escribir los datos del estudiante en el archivo del curso
                     File.WriteAllText(archivoCurso, estudianteFormato.ToString() + "\n");
+                    //! ESCRIBIR ESTUDIANTE EN BD
 
                 }
-                
+
                 return true;
             }
             catch (Exception e)
@@ -133,6 +136,12 @@ namespace PracticaForm
                 //Lanza la excepcion personalizada
                 Funciones.mError(Form3.ActiveForm, e.Message);
                 return false;
+            }
+            finally
+            {
+                // Liberamos Recursos
+                escritor.Close();
+                escritor.Dispose();
             }
         }
 
@@ -171,19 +180,23 @@ namespace PracticaForm
                 }
                 else { throw new DirectoryNotFoundException("No se encontro el archivo " + archivo); }
             }
-            catch (FileLoadException e){
+            catch (FileLoadException e)
+            {
                 Funciones.mError(Form3.ActiveForm, "Archivo existe pero no se puede cargar, intente cerrarlo y vuelva a enviar el Formulario");
                 return null;
             }
-            catch (System.Security.SecurityException e){
+            catch (System.Security.SecurityException e)
+            {
                 Funciones.mError(Form3.ActiveForm, "No tiene permisos para leer el archivo, revise las propiedades y vuelva a enviar el Formulario");
                 return null;
             }
-            catch (InvalidOperationException e){
+            catch (InvalidOperationException e)
+            {
                 Funciones.mError(Form3.ActiveForm, "Operación no permitida, revisar el archivo y vuelva a enviar el Formulario");
                 return null;
             }
-            catch (IOException e){
+            catch (IOException e)
+            {
                 Funciones.mError(Form3.ActiveForm, "Error al cargar Archivo, intente enviarlo de nuevo o modificar las propiedades del Archivo");
                 return null;
             }
@@ -217,7 +230,8 @@ namespace PracticaForm
 
                 return true;
             }
-            catch (IOException e){
+            catch (IOException e)
+            {
                 Funciones.mError(Form3.ActiveForm, "Error al intentar acceder a la información: " + e.Message);
                 return false;
             }
@@ -252,7 +266,8 @@ namespace PracticaForm
                 _escritor.Write(JsonSerializer.Serialize(_listaAlumnos, opciones));
                 return true;
             }
-            catch (IOException e){
+            catch (IOException e)
+            {
                 Funciones.mError(Form3.ActiveForm, "Error al intentar acceder a la información: " + e.Message);
                 return false;
             }
