@@ -114,9 +114,6 @@ namespace PracticaForm
                     // SI TODO ESTÁ EN ORDEN anexamos nuevos Estudiantes al Archivo
                     escritor = new StreamWriter(archivoCurso, true);
                     escritor.WriteLine(estudianteFormato.ToString());
-
-                    //! ESCRIBIR ESTUDIANTE EN BD
-                    
                 }
                 // Caso de que el Archivo NO EXISTA
                 else
@@ -125,8 +122,6 @@ namespace PracticaForm
                     // Crear el Archivo del CURSO
                     // Escribir los datos del estudiante en el archivo del curso
                     File.WriteAllText(archivoCurso, estudianteFormato.ToString() + "\n");
-                    //! ESCRIBIR ESTUDIANTE EN BD
-
                 }
 
                 return true;
